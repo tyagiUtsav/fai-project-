@@ -1,0 +1,120 @@
+{
+  "logistic_regression": {
+    "precision": 0.23680456490727533,
+    "recall": 0.7614678899082569,
+    "f1": 0.36126224156692055,
+    "roc_auc": 0.8108866442199776,
+    "confusion_matrix": [
+      [
+        1247,
+        535
+      ],
+      [
+        52,
+        166
+      ]
+    ],
+    "churn_rate_test": 0.109,
+    "n_test": 2000
+  },
+  "random_forest": {
+    "precision": 0.2832369942196532,
+    "recall": 0.6743119266055045,
+    "f1": 0.3989145183175034,
+    "roc_auc": 0.8365922219133229,
+    "confusion_matrix": [
+      [
+        1410,
+        372
+      ],
+      [
+        71,
+        147
+      ]
+    ],
+    "churn_rate_test": 0.109,
+    "n_test": 2000
+  },
+  "feature_importance_top10": [
+    [
+      "spending_score",
+      0.2998661235793987
+    ],
+    [
+      "cart_abandon_rate",
+      0.2040159076442948
+    ],
+    [
+      "website_visits_per_month",
+      0.11696478389774048
+    ],
+    [
+      "num_purchases",
+      0.10634371863971077
+    ],
+    [
+      "avg_purchase_value",
+      0.07420655675381149
+    ],
+    [
+      "membership_years",
+      0.05620465818366129
+    ],
+    [
+      "annual_income",
+      0.053561403294316925
+    ],
+    [
+      "age",
+      0.04099417970541205
+    ],
+    [
+      "gender_Female",
+      0.005180750606258627
+    ],
+    [
+      "gender_Male",
+      0.005177121150442434
+    ]
+  ],
+  "correlations": {
+    "spending_score": -0.24457363097984108,
+    "num_purchases": -0.17377455774207481,
+    "avg_purchase_value": -0.13021254299301424,
+    "website_visits_per_month": -0.1247265893567421,
+    "membership_years": -0.10990959211025332,
+    "age": -0.02882895178350534,
+    "annual_income": -0.0038047095990027435,
+    "cart_abandon_rate": 0.16070337132407583
+  },
+  "dataset_description": {
+    "n_records": 10000,
+    "n_features": 14,
+    "churn_rate_overall": 0.109,
+    "countries": {
+      "USA": 2389,
+      "India": 1524,
+      "Brazil": 1025,
+      "UK": 1013,
+      "Germany": 1008,
+      "Canada": 828,
+      "Australia": 684,
+      "France": 640,
+      "Japan": 495,
+      "South Africa": 394
+    },
+    "gender_dist": {
+      "Male": 5063,
+      "Female": 4937
+    },
+    "age_range": [
+      18,
+      70
+    ],
+    "age_mean": 44.0458,
+    "income_mean": 86067.6761,
+    "avg_purchase_value_mean": 47.44748,
+    "cart_abandon_rate_mean": 0.501216,
+    "membership_years_mean": 6.3405
+  }
+}
